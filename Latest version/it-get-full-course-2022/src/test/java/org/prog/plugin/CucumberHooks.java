@@ -24,7 +24,7 @@ public class CucumberHooks implements EventListener {
       ChromeOptions chromeOptions = new ChromeOptions();
       chromeOptions.setCapability("enableVNC", true);
       chromeOptions.setCapability("enableVideo", true);
-      if ("DESKTOP-FM5R56F".equals(InetAddress.getLocalHost().getHostName())) {
+      if ("DESKTOP-HV5EU6B".equals(InetAddress.getLocalHost().getHostName())) {
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
         WebSteps.driver = driver;
       } else {
